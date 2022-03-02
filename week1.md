@@ -1,4 +1,4 @@
-# 20220302學習進度＆心得：
+# Week1 學習重點紀錄
 ## Markdown:
 1. 標題：＃＝h1 ; ##=h2…
 2. 引用：>XXX
@@ -11,27 +11,38 @@
 9. code (4 spaces indent) 或是 前後加入`
 
 ## Git:做版本控制
-### 觀看六角學院的Git課程
-
+#### 觀看六角學院的Git課程
+* 如何使用：
 1. 用cmd 去到要執行的資料夾 輸入 `git unit` 做初始化
 就會在隱藏資料夾看到.git
 （按住鍵盤的「Shift」+「Command」+「.」鍵即可查看隱藏資料夾）
-
 2. 設定資料（姓名、電話）
 `git config --global user.email "信箱"`
 完成後 打 `git config list` 可以check 
-
 ![git架構](https://i.imgur.com/9Jk7Tql.png)
 * `git status` 看目前狀態
 * `git  add .` 把檔案丟到索引
 * `git commit -m "新增ＸＸＸ"` 把索引檔案變成新的commit
 * `git log`  看歷史紀錄
-* 上傳到遠端數據庫(Repository)
+
+### * 上傳到遠端數據庫(Repository)
 1. 註冊遠端儲存庫，並 `git remote add origin https://github.com/SheepyChen/XXX.git`
 2. `git branch -M main`
 3. `git push -u origin main 更新資料到遠端`
 （-u 是指他預設會推到哪個遠端數據庫服務，可不寫//origin 可以改它的遠端數據庫名稱，例如 `git push -u XXXX master`）
 > (可以去.git 裏面的config 看［remote “origin “]是否有綁定到git repository)
+> 目前password需要至個人github產生token
+> 其他熱門遠端儲存庫(Bitbucket)做法大同小異
+
+### * 開分支流程(why 分支：讓 master 都是正式版資料，開分支來做測試或開發)
+1. 新增分支：`git branch 分支名稱`
+2. 查看分支：`git branch` (可查看現在head在哪個分支上)
+3. 切換分支：`git checkout 分支名稱`
+4. 刪除分支：`git branch -d 分支名稱` 、-D 是強制刪除
+5. 還原上個版本：`git reset HEAD^`
+6. 合併分支：`git merge 分支名稱`
+7. 取消快轉：`git merge 分支名稱 --no-ff`
+
 
 ## HW3：
 ### 什麼是 command line 以及如何使用?
@@ -55,4 +66,8 @@ command line 也被稱作 命令行 或 命令行介面
 ### 後端
 泛指「儲存、處理資料 和 實作服務功能的部分」，保障資料、服務正確且穩定。
 > 假設今天一個人走去甜點店，買了架上現有的蛋糕以及點了一個現烤的麵包，店面就是前端，後台就是後端，負責處理其他需求，可能還會到倉庫(database)拿東西。
+
 2. 去 Google 首頁搜尋框打上：JavaScript 並且按下 Enter//請說出從這一刻開始到我看到搜尋結果為止發生在背後的事情
+
+
+
