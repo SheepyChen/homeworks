@@ -27,12 +27,12 @@
 
 ### * 上傳到遠端數據庫(Repository)
 1. 註冊遠端儲存庫，並 `git remote add origin https://github.com/SheepyChen/XXX.git`
-2. `git branch -M main`
-3. `git push -u origin main 更新資料到遠端`
-（-u 是指他預設會推到哪個遠端數據庫服務，可不寫//origin 可以改它的遠端數據庫名稱，例如 `git push -u XXXX master`）
-> (可以去.git 裏面的config 看［remote “origin “]是否有綁定到git repository)
-> 目前password需要至個人github產生token
-> 其他熱門遠端儲存庫(Bitbucket)做法大同小異
+2. `git push -u origin main` 更新資料到遠端
+* -u 是指他預設會推到哪個遠端數據庫服務，可不寫
+* origin 可以改它的遠端數據庫名稱，例如 `git push -u XXXX master`）
+3. 可以去.git 裏面的config 看［remote “origin “]是否有綁定到git repository
+* 目前password需要至個人github產生token
+* 其他熱門遠端儲存庫(Bitbucket)做法大同小異
 
 ### * 開分支流程(why 分支：讓 master 都是正式版資料，開分支來做測試或開發)
 1. 新增分支：`git branch 分支名稱`
@@ -46,9 +46,9 @@
 
 ## HW3：
 ### 什麼是 command line 以及如何使用?
-command line 也被稱作 命令行 或 命令行介面 
-純文字的應用程式，可查看及處理電腦裡的檔案，我們平常用的是圖形使用者介面（Graphical User Interface，GUI），
-背後也是這些命令列介面（Command Line Interface，CLI）所構成的。
+command line 也被稱作 命令行 或 命令行介面  
+純文字的應用程式，可查看及處理電腦裡的檔案，我們平常用的是圖形使用者介面（Graphical User Interface，GUI），  
+背後也是這些命令列介面（Command Line Interface，CLI）所構成的。  
 * 常見指令：(有-i -r 等flags，可以輸入man 看manual page)
 1. `ls` 列出目前所在位子的所有檔案//`ls -a` 可以看出隱藏的資料
 2. `pwd` 顯示目前路徑
