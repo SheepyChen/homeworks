@@ -42,6 +42,11 @@
 5. 還原上個版本：`git reset HEAD^`
 6. 合併分支：`git merge 分支名稱`
 7. 取消快轉：`git merge 分支名稱 --no-ff`
+8. Git pull= git fetch+git merge
+Fetch 先抓下來不合併(先看一下如何再決定要不要合併)
+git fetch origin main
+git merge origin/main
+
 
 
 ## HW3：
@@ -68,6 +73,21 @@ command line 也被稱作 命令行 或 命令行介面
 > 假設今天一個人走去甜點店，買了架上現有的蛋糕以及點了一個現烤的麵包，店面就是前端，後台就是後端，負責處理其他需求，可能還會到倉庫(database)拿東西。
 
 2. 去 Google 首頁搜尋框打上：JavaScript 並且按下 Enter//請說出從這一刻開始到我看到搜尋結果為止發生在背後的事情
+
+1. DNS 將 url 解析成 IP 位置，
+2. 瀏覽器(Client)將 IP 包成一個 Request 發送出去。
+3. Request 透過 Internet 的層層協定 發送到 Server 端。
+4. Server 端解析 Request
+5. 在 data center 撈取有關 JavaScript 的資料
+6. 包成一個 Response 回傳。
+7. Client 端開始解析 Response、解析 .html 檔案。
+8. 根據 .html 的檔案內容，一旦發現有 CSS、JS 或 image 等檔案，再發送各檔案的 Request 。
+9. Client 端發送完包含在 html 所有資源的 Request。
+10. 開始下載資源（CSS、JS 或 image）。
+11. 網頁完成。
+
+
+
 
 
 

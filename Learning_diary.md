@@ -1,4 +1,19 @@
 # 學習日誌
+### 20220303
+1. 進度報告:
+* 網路基礎原理 (http 各協定 以及api restful 初探
+* week4筆記初稿並修改week1 
+* 了解git衝突與PR過程,(fork別人專案在做新的commit可以pull request
+2. 心得：
+> 覺得api是販賣機 以及TCP/IP傳紙條等比喻很生動。
+> 今天沒有達成預期的進度：（
+- [ ] 六角學院git課程五（還原）
+3. 明日目標：
+- [ ] 看推薦的youtube課(1.5hr)
+- [ ] week2 JS hw finish
+- [ ] JS 基礎重點整理
+- [ ] node.js串接api 並完成week4 的HW
+
 ### 20220302 
 1. 進度報告:
 * 學習Markdown使用方法
@@ -13,5 +28,5 @@
 
 3. 待完成項目：
 - [ ] 六角學院git課程四～五（衝突與還原）
-- [ ] 瞭解request 到接收 response 中間發生的事
-- [ ] 不同載具的差異在哪（Desktop、Mobile、Web）
+- [x] 瞭解request 到接收 response 中間發生的事
+
