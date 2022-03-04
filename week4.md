@@ -34,29 +34,27 @@
 將「域名（Domain）」就是「網址」轉換成實際的 IP Adress
 ![OSI模型、TCP/IP](https://miro.medium.com/max/1400/0*hcJ3AMXzr3ZmNg7Q)
 ![TCP/IP四層模型](https://miro.medium.com/max/1400/1*BFde4y9sPtLllTZ6OjoKEg.png)
-Port
+1. Port
 中文為連接埠，常見的連接埠為：HTTP 80、HTTPS 443、FTP 21 、監聽 5000 、測試 3000 4000 8000 8080。
-UDP
+2. UDP
 全名 User Datagram Protocol。
 適用於不需要或在程式中執行錯誤檢查和糾正的應用，例如：串流媒體、即時多人遊戲和IP語音（VoIP）
-TCP
+3. TCP
 全名 Transmission Control Protocol。
 大部分的網路協定都是建立在 TCP 上面，因為是比較「可靠」的方式。
-TCP 三次握手
-TCP 可靠的原因在於，正式傳遞之前會進行三次的前置作業，而專有名詞叫做 TCP 三次握手（Three-way handshake）。
-
-IP:
-
-IPv4：使用32位元位址，由四個數字組成，範圍是 0~255。
-IPv6：一個64位元的網路前綴和一個64位元的主機位址。
+* TCP 三次握手:TCP 可靠的原因在於，正式傳遞之前會進行三次的前置作業，而專有名詞叫Three-way handshake。
+4. IP:
+* IPv4：使用32位元位址，由四個數字組成，範圍是 0~255。
+* IPv6：一個64位元的網路前綴和一個64位元的主機位址。
 
 ## API
 讓製造商與消費者溝通的介面，類似販賣機的概念，可以決定要提供什麼服務（選項）給消費者。
 必須具備：如何使用
-restful api:URL定位resources，用HTTP動詞（GET,POST,DELETE...）描述操作。
+* Restful api:URL定位resources，用HTTP動詞（GET,POST,DELETE...）描述操作。
 
 HW5
 請以自己的話解釋 API 是什麼？
 
 請找出三個課程沒教的 HTTP status code 並簡單介紹
+
 假設你現在是個餐廳平台，需要提供 API 給別人串接並提供基本的 CRUD 功能，包括：回傳所有餐廳資料、回傳單一餐廳資料、刪除餐廳、新增餐廳、更改餐廳，你的 API 會長什麼樣子？請提供一份 API 文件。

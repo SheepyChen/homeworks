@@ -43,9 +43,31 @@
 6. 合併分支：`git merge 分支名稱`
 7. 取消快轉：`git merge 分支名稱 --no-ff`
 8. Git pull= git fetch+git merge
-Fetch 先抓下來不合併(先看一下如何再決定要不要合併)
-git fetch origin main
-git merge origin/main
+    通常會Fetch 先抓下來不合併(先看一下如何再決定要不要合併)
+`git fetch origin main`
+`git merge origin/main`
+9. `git Rebase` [圖解](https://backlog.com/git-tutorial/tw/stepup/stepup2_8.html)
+10. `Git cherry-pick`：移動分支到對應的commit點
+11. 還原版本
+* 還原前兩個版本：`git reset HEAD^^`
+* 還原前兩個版本，所有更新檔案都放棄：`git reset HEAD^^ --hard`
+12. checkout 與 reset 差異:
+* checkout 是移動 HEAD
+* reset 是移動 branch
+ *  Git reset 參數
+ *  mixed(預設) - 丟回工作目錄
+ *  soft - 丟回索引
+ *  hard - 直接丟掉
+13. 設定忽略清單 .gitignore(node_modules一些快取檔都會丟入)
+建立環境在 master 分支
+開啟 dev、feature 分支開始進行作業
+14. config 位置
+當你輸入指令時，其實是針對一個實體檔案去做修正，那就是 .gitconfig。
+alias 可以自行把指令設定成簡寫更快
+co = checkout
+ci = commit
+st = status
+br = branch
 
 
 
