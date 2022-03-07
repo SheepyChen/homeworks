@@ -48,13 +48,42 @@
 * IPv6：一個64位元的網路前綴和一個64位元的主機位址。
 
 ## API
-讓製造商與消費者溝通的介面，類似販賣機的概念，可以決定要提供什麼服務（選項）給消費者。
-必須具備：如何使用
+
+
 * Restful api:URL定位resources，用HTTP動詞（GET,POST,DELETE...）描述操作。
 
-HW5
-請以自己的話解釋 API 是什麼？
+## HW5
+1. 請以自己的話解釋 API 是什麼？
+讓製造商與消費者溝通的介面，類似販賣機的概念，可以決定要提供什麼服務（選項）給消費者。
+2. 請找出三個課程沒教的 HTTP status code 並簡單介紹
+* 302 Found (en-US)
+This response code means that URI of requested resource has been changed temporarily. New changes in the URI might be made in the future. Therefore, this same URI should be used by the client in future requests.
+用於告知特定URL的訪問者該頁面已被臨時移動，將他們直接定向到新位置。
+* 403 Forbidden
+用戶端並無訪問權限，例如未被授權，所以伺服器拒絕給予應有的回應。不同於 401，伺服端知道用戶端的身份。
+* 503 Service Unavailable
+The server is not ready to handle the request. Common causes are a server that is down for maintenance or that is overloaded. Note that together with this response, a user-friendly page explaining the problem should be sent. This responses should be used for temporary conditions and the Retry-After: HTTP header should, if possible, contain the estimated time before the recovery of the service. The webmaster must also take care about the caching-related headers that are sent along with this response, as these temporary condition responses should usually not be cached.
+在串接api時，有發生過因為短時間內重新載入太多次而顯示這個狀態。
+3. 假設你現在是個餐廳平台，需要提供 API 給別人串接並提供基本的 CRUD 功能，包括：回傳所有餐廳資料、回傳單一餐廳資料、刪除餐廳、新增餐廳、更改餐廳，你的 API 會長什麼樣子？請提供一份 API 文件。
+ALL
+回傳所有餐廳資料
+使用範例：
+GET 'https://api.restaurants'
 
-請找出三個課程沒教的 HTTP status code 並簡單介紹
+回應範例：
+[ {'ID1'：'NAME1'}, {'ID2'：'NAME2'}, {'ID3'：'NAME3'}, ... ]
 
-假設你現在是個餐廳平台，需要提供 API 給別人串接並提供基本的 CRUD 功能，包括：回傳所有餐廳資料、回傳單一餐廳資料、刪除餐廳、新增餐廳、更改餐廳，你的 API 會長什麼樣子？請提供一份 API 文件。
+NAME
+回傳單一餐廳資料
+使用範例：
+GET 'https://api.restaurants/:id'
+
+回應範例：
+{'ID1'：'NAME1'}
+
+DELETE NAME
+刪除餐廳
+使用範例：
+DELETE "https://api.restaurants/:id"
+
+

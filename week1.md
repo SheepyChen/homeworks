@@ -59,8 +59,8 @@
  *  soft - 丟回索引
  *  hard - 直接丟掉
 13. 設定忽略清單 .gitignore(node_modules一些快取檔都會丟入)
-建立環境在 master 分支
-開啟 dev、feature 分支開始進行作業
+* 建立環境在 master 分支
+* 開啟 dev、feature 分支開始進行作業
 14. config 位置
 當你輸入指令時，其實是針對一個實體檔案去做修正，那就是 .gitconfig。
 alias 可以自行把指令設定成簡寫更快
